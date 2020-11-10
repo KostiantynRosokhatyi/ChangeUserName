@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+.nameDelete__icon {
+    cursor: pointer;
+    display: inline-block;
+}
+
+.title_name {
+    font-family: Roboto, sans-serif;
+    font-size: 26px;
+    font-weight: 200;
+}
+
+.article-list__li {
+    list-style: none;
+}
+
+.name-change__button {
+    background-color: rgb(0, 210, 239);
+    border-width: 0px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-family: Roboto, sans-serif;
+    font-weight: 700;
+    border-radius: 6px;
+    display: inline-block;
+    margin: 5px 0 5px 0;
+    /*    width: 97px;
+        height: 40px;*/
+}
+
+.name {
+    user-select: none;
+    font-family: Roboto, sans-serif, inherit;
+    font-size: 18px;
+    text-align: right;
+    background: #fff;
+    font-weight: 400;
+}
+
+.save-changed-name__button {
+    border-width: 0px;
+    font-family: Roboto, sans-serif;
+    font-weight: 700;
+    border-radius: 6px;
+    background-color: rgb(248, 96, 96);
+    color: white;
+    font-size: 16px;
+    width: 90px;
+    height: 36px;
+}
+
+.save-changed-name__button:focus {
+    background-color: rgb(248, 96, 96);
+    color: white;
+}
+
+.save-changed-name__button:hover {
+    background-color: rgb(248, 96, 96);
+    color: white;
+}
+
+.input-change {
+    border-radius: 6px;
+    margin-right: 5px;
+    border: 2px solid rgb(129, 127, 128);
+    height: 36px;
+    width: 70px;
+    margin-left: 112px;
+}
+
+.notification {
+    padding: 8px 45px 5px 0;
+    height: 37px;
+    margin-left: 360px;
+    margin-top: 30px;
+    background: rgb(71, 226, 161);;
+    width: 400px;
+}

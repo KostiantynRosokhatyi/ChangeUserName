@@ -7,7 +7,8 @@ import usernames from '../fictures'
 function UserName (props){
     const {username} = props
     const handleChange = () => {
-        alert("User is deleted")
+        alert("User is deleted!!!!!")
+
     }
     return (
         <div>

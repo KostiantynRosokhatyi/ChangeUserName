@@ -8,7 +8,7 @@ function ChangeName() {
     return (
         <Row>
             <Col>
-                <Input placeholder={"Name"} className="input-change"/>
+                <Input placeholder={'name'} className="input-change"/>
                 <Button className="save-changed-name__button"
                         onClick={function handleClick(e2) {
                             e2.preventDefault();

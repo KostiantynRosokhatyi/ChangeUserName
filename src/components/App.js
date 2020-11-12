@@ -7,6 +7,10 @@ import ChangeName from "./changeName";
 import 'antd/dist/antd.css';
 
 function App() {
+    const [state, setState] = useState(usernames);
+    const removeItem = function (value) {
+        return state.filter(item => item.user !== value)
+    }
 
     return (
         <div style={{marginTop: '140px'}}>
@@ -17,7 +21,7 @@ function App() {
                         <Router>
                             <Switch>
                                 <Route exact path='/'>
-                                    <UserList usernames={usernames}/>
+                                    <UserList usernames={state} onClick={onClick}/>
                                 </Route>
                                 <Route exact path='/change'>
                                     <ChangeName/>
@@ -29,6 +33,11 @@ function App() {
             </Row>
         </div>
     )
+
+    function onClick(value) {
+        alert('User is deleted')
+        setState(removeItem(value))
+    }
 }
 
 export default App

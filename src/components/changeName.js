@@ -1,8 +1,7 @@
-import React, {Component} from 'react';
+import React from 'react';
 import {Button, Input, Row, Col, message} from "antd";
 import 'antd/dist/antd.css';
 import './style.css';
-import fictures from "../fictures";
 
 function ChangeName() {
     return (
@@ -19,10 +18,12 @@ function ChangeName() {
                             })
                             window.setTimeout(() => {
                                 window.location.replace('http://localhost:3000/');
-                            }, 1000)}}>Save
+                            }, 1000)
+                        }}>Save
                 </Button>
             </Col>
         </Row>
     )
 }
+
 export default ChangeName

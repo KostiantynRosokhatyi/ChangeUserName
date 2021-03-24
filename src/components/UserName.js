@@ -17,7 +17,7 @@ function UserName(props) {
                         <Button type="primary" className="name-change__button"
                                 onClick={function handleClick(e) {
                                     e.preventDefault();
-                                    window.location.replace('http://localhost:3000/change');
+                                    window.location.replace('/#/change');
                                 }}>Change</Button>
                     </Col>
                     <Col>

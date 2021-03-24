@@ -17,7 +17,7 @@ function ChangeName() {
                                 className: 'notification'
                             })
                             window.setTimeout(() => {
-                                window.location.replace('http://localhost:3000/');
+                                window.location.replace('https://kostiantynrosokhatyj.github.io/ChangeUserName/');
                             }, 1000)
                         }}>Save
                 </Button>

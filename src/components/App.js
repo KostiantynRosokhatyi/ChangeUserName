@@ -1,6 +1,6 @@
 import UserList from "./UserList";
-import React, {Component, useState} from 'react'
-import {BrowserRouter as Router, Switch, Route,} from 'react-router-dom';
+import React, {useState} from 'react'
+import {BrowserRouter as Router, Switch, Route, HashRouter,} from 'react-router-dom';
 import usernames from '../fictures'
 import {Row, Col} from "antd";
 import ChangeName from "./changeName";
@@ -18,16 +18,14 @@ function App() {
                 <Col span={6} offset={7} align="middle" justify="space-around">
                     <div>
                         <Col span={6} align="left"><h1 className="title_name">Name</h1></Col>
-                        <Router>
+                        <HashRouter>
                             <Switch>
                                 <Route exact path='/'>
                                     <UserList usernames={state} onClick={onClick}/>
                                 </Route>
-                                <Route exact path='/change'>
-                                    <ChangeName/>
-                                </Route>
+                                <Route exact path='/change' render={() => <ChangeName />} />
                             </Switch>
-                        </Router>
+                        </HashRouter>
                     </div>
                 </Col>
             </Row>
